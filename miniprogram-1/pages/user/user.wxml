@@ -1,0 +1,26 @@
+<import src="../common/header.wxml" />
+<import src="../common/footer.wxml" />
+
+<view class="container">
+  <open-data type="userAvatarUrl"></open-data>
+  <open-data type="userNickName"></open-data>
+  <view class="page-body">
+    <view class="page-body-wrapper">
+      <view class="page-body-info">
+        <block wx:if="{{hasUserInfo === false}}">
+          <text class="page-body-text">点击绿色按钮可获取用户头像及昵称</text>
+        </block>
+        <block wx:if="{{hasUserInfo === true}}">
+          <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}"></image>
+          <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+        </block>
+      </view>
+      <view class="page-body-buttons">
+        <button wx:if="{{canIUse}}"  class="page-body-button" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" type="primary" >授权登录</button>
+        <view wx:else>请升级微信版本</view>
+      </view>
+    </view>
+  </view>
+
+  <template is="footer" />
+</view>

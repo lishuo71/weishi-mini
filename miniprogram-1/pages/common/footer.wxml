@@ -1,0 +1,4 @@
+<template name="footer">
+  <view class="page-footer">
+  </view>
+</template>

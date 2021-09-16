@@ -1,0 +1,9 @@
+<view class="container">
+  <view class="page-body">
+    <view class="page-body-wrapper">
+      <view class="page-body-buttons">
+        <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber" type="primary">读取微信手机号码</button>
+      </view>
+    </view>
+  </view>
+</view>

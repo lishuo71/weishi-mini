@@ -1,0 +1,19 @@
+<import src="../common/header.wxml" />
+<import src="../common/footer.wxml" />
+
+<view class="container">
+  <template is="header" data="{{title: '支付中......'}}"/>
+
+  <view class="page-body">
+    <view class="page-body-wrapper">
+      <block wx:if="{{hasBuy === true}}">
+        <text class="page-body-title">已支付成功</text>
+      </block>
+      <block wx:if="{{hasBuy === false}}">
+        <text class="page-body-text">请尽快按照界面提示完成支付</text>
+      </block>
+    </view>
+  </view>
+
+  <template is="footer" />
+</view>

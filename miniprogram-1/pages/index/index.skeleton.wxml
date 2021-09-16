@@ -1,0 +1,16 @@
+<!--
+此文件为开发者工具生成，生成时间: 2020/11/2 下午4:21:45 
+使用方法：
+1. 在"pages/index/index.wxml"中使用`include`指令引入此模板，
+2. 在"pages/index/index.wxss"中使用`import`指令引入"pages/index/index.skeleton.wxss"
+3. 书写对应的逻辑，来控制骨架屏的显示与隐藏
+
+更多详细信息可以参考文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/skeleton.html
+-->
+<view class="sk-container">
+  <view class="page-body">
+    <view class="page-section page-section-gap">
+      <web-view src="https://ws.gugensoft.com" style="width: 414px; height: 672px;"></web-view>
+    </view>
+  </view>
+</view>

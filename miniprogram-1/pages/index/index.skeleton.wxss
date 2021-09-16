@@ -1,0 +1,14 @@
+/*
+此文件为开发者工具生成，生成时间: 2020/11/2 下午4:21:45 
+使用方法：参考 "pages/index/index.skeleton.wxml"
+*/
+.sk-container {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000000;
+    background-color: transparent;
+  }
